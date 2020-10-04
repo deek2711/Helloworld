@@ -3,7 +3,7 @@ session_start;
 include("Assets/php/dbconfig.php");
 function alert($msg) {
     echo "<script type='text/javascript'>alert('$msg');</script>";
-}
+}#confused
 function check_pass($i,$dbconfig,$password){
 	$password=crypt($password, '$2a$07$CCSCodersUnderSiegelul$');
 	$query=$dbconfig->prepare("SELECT * from {$i}_login where email=? and password=?");
